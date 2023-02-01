@@ -23,4 +23,5 @@ describe("Method works as expected", () => {
     test("Availability returns the correct message", () => {
         expect()
     })
+    
 })
