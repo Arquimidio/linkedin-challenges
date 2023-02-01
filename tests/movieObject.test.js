@@ -1,4 +1,3 @@
-const { default: test } = require('node:test');
 const Movie = require('../challenges/movieObject');
 let movie;
 
@@ -7,6 +6,7 @@ beforeEach(() => {
 })
 
 describe("Property / Method is present", () => {
+
     test("All properties are present", () => {
         expect(
             ['title', 'director', 'genre', 'releaseYear', 'rating'].every(prop => prop in movie)
@@ -15,5 +15,14 @@ describe("Property / Method is present", () => {
 
     test("All methods are present", () => {
         expect(['overview'].every(method => method in movie)).toBe(true);
+    })
+})
+
+describe("Methods work as expected", () => {
+
+    test("Overview getter returns the correct string", () => {
+        expect(movie.overview).toBe(
+            `${movie.title}, a ${movie.genre} film directed by <director> was released in <releaseYear>. It received a rating of <rating>`
+        )
     })
 })
