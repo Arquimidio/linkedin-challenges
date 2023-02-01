@@ -44,11 +44,11 @@ module.exports = class Book {
         }
     }
 
-    sell() {
-
+    sell(copiesToSell = 1) {
+        this._numCopies = Math.max(0, this.numCopies - copiesToSell);
     }
 
-    restock() {
-        
+    restock(newCopiesAmount = 5) {
+        this._numCopies += newCopiesAmount;
     }
 }

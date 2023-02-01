@@ -1,4 +1,3 @@
-const { default: test } = require('node:test');
 const Book = require('../challenges/availableBooks');
 let outOfStockBook, lowStockBook, inStockBook;
 
