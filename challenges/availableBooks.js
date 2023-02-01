@@ -33,4 +33,22 @@ module.exports = class Book {
     get numCopies() {
         return this._numCopies;
     }
+
+    get availability() {
+        if(this.numCopies === 0) {
+            return "Out of Stock";
+        } else if(this.numCopies < 10) {
+            return "Low Stock";
+        } else {
+            return "In Stock"
+        }
+    }
+
+    sell() {
+
+    }
+
+    restock() {
+        
+    }
 }

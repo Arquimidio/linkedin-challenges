@@ -6,7 +6,11 @@ beforeEach(() => {
 })
 
 describe("Property / Method is present" , () => {
-    test("All constructor properties are present", () => {
+    test("Constructor properties", () => {
         expect(['title', 'author', 'ISBN', 'numCopies'].every(prop => prop in book)).toBe(true);
+    })
+
+    test("Methods are present", () => {
+        expect(['availability', 'sell', 'restock'].every(method => method in book));
     })
 })
