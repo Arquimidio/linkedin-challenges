@@ -47,7 +47,7 @@ function Movie(title, director, genre, releaseYear, rating) {
 
 Object.defineProperty(Movie.prototype, 'overview', {
     get() {
-        return `${this.title}, a ${this.genre} film directed by ${this.director} was released in ${this.releaseYear}. It received a rating of ${this.rating}`
+        return `${this.title}, a ${this.genre} film directed by ${this.director} was released in ${this.releaseYear}. It received a rating of ${this.rating}`;
     }
 })
 
