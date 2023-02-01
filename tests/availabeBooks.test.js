@@ -3,7 +3,7 @@ let outOfStockBook, lowStockBook, inStockBook;
 
 beforeEach(() => {
     const bookData = ['Lord Of The Programmers', 'Neo Protagonist', '424242'];
-    outOfStockBook = new Book(...bookData, 13);
+    outOfStockBook = new Book(...bookData, 0);
     lowStockBook = new Book(...bookData, 5);
     inStockBook = new Book(...bookData, 13);
 })
@@ -25,5 +25,7 @@ describe("Method works as expected", () => {
         expect(lowStockBook.availability).toBe('Low Stock');
         expect(inStockBook.availability).toBe('In Stock');
     })
+
+
 
 })
