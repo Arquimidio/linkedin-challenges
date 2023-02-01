@@ -14,3 +14,5 @@ describe("Property / Method is present" , () => {
         expect(['availability', 'sell', 'restock'].every(method => method in book));
     })
 })
+
+describe("")
