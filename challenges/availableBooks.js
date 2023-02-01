@@ -9,3 +9,9 @@
         - sell function, with default selling number to 1
         - restock, with default restock value of 5
 */
+
+module.exports = class Book {
+    constructor() {
+        
+    }
+}
