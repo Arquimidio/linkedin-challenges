@@ -21,7 +21,9 @@ describe("Property / Method is present" , () => {
 describe("Method works as expected", () => {
     
     test("Availability returns the correct message", () => {
-        expect()
+        expect(outOfStockBook.availability).toBe('Out of Stock');
+        expect(lowStockBook.availability).toBe('Low Stock');
+        expect(inStockBook.availability).toBe('In Stock');
     })
-    
+
 })
