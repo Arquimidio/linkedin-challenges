@@ -11,7 +11,26 @@
 */
 
 module.exports = class Book {
-    constructor() {
-        
+    constructor(title, author, ISBN, numCopies) {
+        this._title = title;
+        this._author = author;
+        this._ISBN = ISBN;
+        this._numCopies = numCopies;
+    }
+
+    get title() {
+        return this._title;
+    }
+
+    get author() {
+        return this._author;
+    }
+
+    get ISBN() {
+        return this._ISBN;
+    }
+
+    get numCopies() {
+        return this._numCopies;
     }
 }
