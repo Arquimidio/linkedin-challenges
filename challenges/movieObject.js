@@ -9,7 +9,7 @@
     3. Develop your solution through a constructor function (basic prototype, no class syntax)
 */
 
-module.exports = function Movie(title, director, genre, releaseYear, rating) {
+function Movie(title, director, genre, releaseYear, rating) {
     this._title = title;
     this._director = director;
     this._genre = genre;
@@ -34,7 +34,7 @@ module.exports = function Movie(title, director, genre, releaseYear, rating) {
         },
         releaseYear: {
             get() {
-                return this.releaseYear;
+                return this._releaseYear;
             }
         },
         rating: {
@@ -44,3 +44,11 @@ module.exports = function Movie(title, director, genre, releaseYear, rating) {
         }
     })
 }
+
+Object.defineProperty(Movie.prototype, 'overview', {
+    get() {
+        return `${this.title}, a ${this.genre} film directed by ${this.director} was released in ${this.releaseYear}. It received a rating of ${this.rating}`
+    }
+})
+
+module.exports = Movie;

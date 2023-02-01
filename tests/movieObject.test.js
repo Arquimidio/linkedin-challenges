@@ -22,7 +22,7 @@ describe("Methods work as expected", () => {
 
     test("Overview getter returns the correct string", () => {
         expect(movie.overview).toBe(
-            `${movie.title}, a ${movie.genre} film directed by <director> was released in <releaseYear>. It received a rating of <rating>`
+            `${movie.title}, a ${movie.genre} film directed by ${movie.director} was released in ${movie.releaseYear}. It received a rating of ${movie.rating}`
         )
     })
 })
