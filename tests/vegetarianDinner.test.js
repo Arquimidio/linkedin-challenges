@@ -1,0 +1,1 @@
+const vegetarianDishes = require('../challenges/vegetarianDinner');

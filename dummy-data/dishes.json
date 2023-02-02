@@ -1,14 +1,30 @@
 [
     {
+        "name": "Spaghetti with fried chicken",
+        "vegetarian": false
+    },
+    {
         "name": "Meatn't",
         "vegetarian": true
     },
     {
-        "name": "Cheesen't",
+        "name": "Cheese",
         "vegetarian": true
     },
     {
-        "name": "Milkn't",
+        "name": "Beef with cheese",
+        "vegetarian": false
+    },
+    {
+        "name": "Milk",
         "vegetarian": true
+    },
+    {
+        "name": "Fried eggs with bacon",
+        "vegetarian": false
+    },
+    {
+        "name": "Yeti leg",
+        "vegetarian": false
     }
 ]
