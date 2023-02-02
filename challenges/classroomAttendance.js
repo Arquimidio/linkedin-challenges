@@ -38,6 +38,6 @@ module.exports = class Classroom {
     } else {
       const [teacher, ...students] = this.people;
       return students
-    }
+    } 
   }
 }
