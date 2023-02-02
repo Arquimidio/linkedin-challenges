@@ -5,7 +5,7 @@ describe("Works as expected", () => {
   test("Removes duplicates", () => {
     expect(
       masterMenu(dummyMenus)
-        .every((item, i, arr) => arr.indexOf(item, i) === -1)
+        .every((item, i, arr) => arr.indexOf(item, i + 1) === -1)
     ).toBe(true)
   })
 })
