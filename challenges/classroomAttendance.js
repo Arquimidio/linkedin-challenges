@@ -7,3 +7,7 @@
   4. The rest will be the students
   5. getStudents should return only the students
 */
+
+module.exports = class Classroom {
+  
+}
