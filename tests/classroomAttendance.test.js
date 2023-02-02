@@ -1,4 +1,3 @@
-const { beforeEach, default: test, describe } = require('node:test');
 const Classroom = require('../challenges/classroomAttendance');
 let classroomWithAssistant;
 let classroomWithoutAssistant;
@@ -18,7 +17,7 @@ describe("Exists", () => {
   })
 
   test("Methods", () => {
-    [students].every(method => method in classroomWithAssistant)
+    ["students"].every(method => method in classroomWithAssistant)
   })
 })
 
