@@ -1,0 +1,14 @@
+[
+    {
+        "name": "Meatn't",
+        "vegetarian": true
+    },
+    {
+        "name": "Cheesen't",
+        "vegetarian": true
+    },
+    {
+        "name": "Milkn't",
+        "vegetarian": true
+    }
+]
