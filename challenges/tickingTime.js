@@ -8,12 +8,7 @@ class Clock {
   }
 
   get time() {
-    const today = new Date();
-    const hours = this.pad(today.getHours());
-    const minutes = this.pad(today.getMinutes());
-    const seconds = this.pad(today.getSeconds());
-    const result = `${hours}:${minutes}:${seconds}`;
-    return result;
+    return new Date().toLocaleTimeString();
   }
 }
 
