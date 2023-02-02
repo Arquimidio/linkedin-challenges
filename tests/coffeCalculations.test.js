@@ -21,7 +21,11 @@ describe("Exists", () => {
 })
 
 describe("Works as expected", () => {
-  test("Return the correct total", () => {
+  test("Returns the correct total", () => {
     expect(calculations.total).toBe(12.5);
+  })
+
+  test("Returns the correct total bill", () => {
+    expect(calculations.totalBill).toBe("The total bill is $12.50");
   })
 })

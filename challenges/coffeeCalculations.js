@@ -24,7 +24,17 @@ module.exports = class CoffeeCalculations {
       .reduce((acc, cur) => acc + cur * this.pricePerCoffee, 0)
   }
 
+  get totalCurrency() {
+    return this.total.toLocaleString(
+      "en-US",
+      {
+        style: "currency",
+        currency: "USD"
+      }
+    )
+  }
+
   get totalBill() {
-    return `The total bill is ${this.total}`
+    return `The total bill is ${this.totalCurrency}`
   }
 }
