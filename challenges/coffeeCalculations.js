@@ -23,4 +23,8 @@ module.exports = class CoffeeCalculations {
     return this.coffeeOrders
       .reduce((acc, cur) => acc + cur * this.pricePerCoffee, 0)
   }
+
+  get totalBill() {
+    return `The total bill is ${this.total}`
+  }
 }
