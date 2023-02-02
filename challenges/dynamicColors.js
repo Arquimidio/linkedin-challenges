@@ -6,5 +6,11 @@
 
 
 function changeColorClosure() {
-  
+  const colors = ["Blue", "Pink", "Green"];
+  let counter = 0;
+  return () => {
+    return colors[(counter++) % colors.length];
+  }
 }
+
+module.exports = changeColorClosure;
